@@ -63,8 +63,11 @@ for i in 0..(n-1)
 	end
 end
 
-for k in 0..(k-1)
- puts "The letter with maximum occurence in the given string is " + alpha[k] + " and has occured " + max.to_s + " times "
+alpha.uniq!
+
+#for k in 0..(k-1)
+alpha.each do |x|
+ puts "The letter with maximum occurence in the given string is " + x + " and has occured " + max.to_s + " times "
 end
 
 end
